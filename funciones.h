@@ -16,3 +16,12 @@ FILE * guardar_estudiantes(Estudiante* lista,int n);
 void limpiar_buffer();
 int ejemplo2();
 int ejemplo1();
+
+/*Estructura ejercicio propuesto 1*/
+
+typedef struct Estado{
+  char *nombre;
+  char *capital; 
+} Estado;
+
+void ejercicio_prop1();

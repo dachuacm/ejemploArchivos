@@ -97,4 +97,67 @@ int ejemplo2(){
 
 }
 
+/*
+Funciones de los ejercicios propuestos
+*/
+Estado * cargar_estados(){
+  FILE * datos=abrir_archivo("estados_capitales.txt","r");
+  Estado *estados=NULL;
+  char linea[100]={0},* nombre,*capital;
+  int i=0;
 
+  if(datos!=NULL){
+    //reservar memoria para los 32 estados
+      estados=calloc(32,sizeof(Estado));
+      if(estados!=NULL){
+    //Leer linea a linea el archivo y reservar espacio para los datos del estado
+        while (fgets(linea, sizeof(linea), datos) != NULL) {
+          (estados+i)->nombre=calloc(50,1);
+          (estados+i)->capital=calloc(50,1);
+
+          strcpy((estados+i)->nombre,strtok(linea,"–"));
+          strcpy((estados+i)->capital,strtok(NULL,"–"));
+          i++;
+        }
+        
+      }
+      fclose(datos);
+  }
+  return estados;
+}
+
+void imprimir_estados(Estado *estados){
+   int i;
+  for(i=0;i<32;i++){
+    printf("%d:%s --- %s\n",i,estados->nombre,estados->capital);
+    estados++;
+  }
+}
+
+char *busca_capital(Estado *estados,char *estado_buscado){
+    int i=0;
+    while(i<32 && strcmp(estados->nombre,estado_buscado)!=0  ){
+        estados++;
+        i++;
+      }
+    if(i<32) return estados->capital;
+    else return NULL;
+}
+
+void ejercicio_prop1(){
+
+  Estado *lista_estados;
+  char nom_estado[20]={0},*capital;
+
+  lista_estados=cargar_estados();
+  printf("Ingresa el estado:");
+  fgets(nom_estado,sizeof(nom_estado),stdin);
+  nom_estado[strcspn(nom_estado, "\n")] = '\0';
+  capital=busca_capital(lista_estados,nom_estado);
+  if(capital!=NULL){
+     printf("\n Su capital es:%s",capital);
+  } else printf("No se encontró el estado\n"); 
+  
+  //imprimir_estados(lista_estados);
+
+}

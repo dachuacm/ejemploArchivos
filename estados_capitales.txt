@@ -1,32 +1,32 @@
-Aguascalientes – Aguascalientes
-Baja California – Mexicali
-Baja California Sur – La Paz
-Campeche – San Francisco de Campeche
-Chiapas – Tuxtla Gutiérrez
-Chihuahua – Chihuahua
-Ciudad de México – Ciudad de México
-Coahuila – Saltillo
-Colima – Colima
-Durango – Victoria de Durango
-Estado de México – Toluca
-Guanajuato – Guanajuato
-Guerrero – Chilpancingo
-Hidalgo – Pachuca
-Jalisco – Guadalajara
-Michoacán – Morelia
-Morelos – Cuernavaca
-Nayarit – Tepic
-Nuevo León – Monterrey
-Oaxaca – Oaxaca de Juárez
-Puebla – Puebla de Zaragoza
-Querétaro – Santiago de Querétaro
-Quintana Roo – Chetumal
-San Luis Potosí – San Luis Potosí
-Sinaloa – Culiacán
-Sonora – Hermosillo
-Tabasco – Villahermosa
-Tamaulipas – Ciudad Victoria
-Tlaxcala – Tlaxcala de Xicohténcatl
-Veracruz – Xalapa
-Yucatán – Mérida
-Zacatecas – Zacatecas
+Aguascalientes–Aguascalientes
+Baja California–Mexicali
+Baja California Sur–La Paz
+Campeche–San Francisco de Campeche
+Chiapas–Tuxtla Gutiérrez
+Chihuahua–Chihuahua
+Ciudad de México–Ciudad de México
+Coahuila–Saltillo
+Colima–Colima
+Durango–Victoria de Durango
+Estado de México–Toluca
+Guanajuato–Guanajuato
+Guerrero–Chilpancingo
+Hidalgo–Pachuca
+Jalisco–Guadalajara
+Michoacán–Morelia
+Morelos–Cuernavaca
+Nayarit–Tepic
+Nuevo León–Monterrey
+Oaxaca–Oaxaca de Juárez
+Puebla–Puebla de Zaragoza
+Querétaro–Santiago de Querétaro
+Quintana Roo–Chetumal
+San Luis Potosí–San Luis Potosí
+Sinaloa–Culiacán
+Sonora–Hermosillo
+Tabasco–Villahermosa
+Tamaulipas–Ciudad Victoria
+Tlaxcala–Tlaxcala de Xicohténcatl
+Veracruz–Xalapa
+Yucatán–Mérida
+Zacatecas–Zacatecas
