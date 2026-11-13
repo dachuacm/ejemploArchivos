@@ -1,5 +1,5 @@
 #include "funciones.h"
 
 int main(){
-  return ejemplo1();
+  return ejemplo2();
 }

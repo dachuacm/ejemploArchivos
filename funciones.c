@@ -16,13 +16,14 @@ FILE * abrir_archivo(char * ruta,char * modo){
   return fp;
 }
 
-FILE * imprimirArchivo(FILE * archivo){
+int imprimirArchivo(FILE * archivo){
 
  char linea[80]={0};
 
 while (fgets(linea, sizeof(linea), archivo) != NULL) {
       printf("%s", linea);
   }
+  
   return 0;
 } 
 
@@ -95,4 +96,5 @@ int ejemplo2(){
   return 0;
 
 }
+
 

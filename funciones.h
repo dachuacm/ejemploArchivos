@@ -9,10 +9,10 @@ typedef struct Estudiante{
   char email[15];
 } Estudiante;
 
-FILE * imprimirArchivo(FILE* archivo);
 FILE * abrir_archivo(char * ruta,char * modo);
+int imprimirArchivo(FILE* archivo);
 Estudiante * capturar_estudiantes(int n);
 FILE * guardar_estudiantes(Estudiante* lista,int n);
-
+void limpiar_buffer();
 int ejemplo2();
 int ejemplo1();
