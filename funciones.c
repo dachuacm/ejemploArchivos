@@ -161,3 +161,28 @@ void ejercicio_prop1(){
   //imprimir_estados(lista_estados);
 
 }
+
+//////funciones manejo de archivos binarios///
+
+Alumno *  cargar_alumnos(char *nom_archivo){
+ return NULL;
+}
+
+FILE * guardar_alumnos(char *nom_archivo,int n){
+return NULL;
+}
+
+void impirmir_lista_Alumnos(Alumno * lista){
+
+}
+
+void ejemplo1_archivoBin(){
+   Alumno * alumnos;
+
+   guardar_alumnos("datos.bin",3);
+   alumnos=cargar_alumnos("datos.bin");
+   impirmir_lista_Alumnos(alumnos);
+
+   
+
+}

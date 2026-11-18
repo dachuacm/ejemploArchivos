@@ -25,3 +25,11 @@ typedef struct Estado{
 } Estado;
 
 void ejercicio_prop1();
+
+///Ejercicios archivos binarios/////
+
+typedef struct Alumno{
+  char nombre[50];
+  int edad;
+  float promedio;
+}Alumno;
