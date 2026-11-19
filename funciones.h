@@ -33,3 +33,5 @@ typedef struct Alumno{
   int edad;
   float promedio;
 }Alumno;
+
+void ejemplo1_archivoBin();

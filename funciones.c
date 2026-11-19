@@ -164,24 +164,55 @@ void ejercicio_prop1(){
 
 //////funciones manejo de archivos binarios///
 
-Alumno *  cargar_alumnos(char *nom_archivo){
- return NULL;
+Alumno *  cargar_alumnos(char *nom_archivo, int n){
+
+  FILE * archivo=abrir_archivo(nom_archivo,"rb");
+  Alumno *lista=malloc(n*sizeof(Alumno));
+  int i;
+
+      if(archivo!=NULL && lista!=NULL){
+       
+                fread(lista,sizeof(Alumno),n,archivo);
+           fclose(archivo);
+      }
+ return lista;
 }
 
 FILE * guardar_alumnos(char *nom_archivo,int n){
-return NULL;
+  FILE * archivo=abrir_archivo(nom_archivo,"ab");
+  Alumno alumno;
+if(archivo!=NULL){
+  for(int i=0;i<n;i++){
+    printf("Datos alumno %d\n",i);
+    printf("Nombre:");
+    fgets(alumno.nombre,sizeof(alumno.nombre),stdin);
+    printf("Edad:");
+    scanf("%d",&alumno.edad);
+    printf("Promedio:");
+    scanf("%f",&alumno.promedio);
+    getchar();
+
+    fwrite(&alumno,sizeof(Alumno),1,archivo);
+
+  }
+  fclose(archivo);
+}
+  return archivo;
 }
 
-void impirmir_lista_Alumnos(Alumno * lista){
+void impirmir_lista_Alumnos(Alumno * lista,int n){
 
+   for(int i=0;i<n;i++){
+    printf("%s%d,%.2f\n",(lista+i)->nombre,(lista+i)->edad,(lista+i)->promedio);
+   }
 }
 
 void ejemplo1_archivoBin(){
    Alumno * alumnos;
 
    guardar_alumnos("datos.bin",3);
-   alumnos=cargar_alumnos("datos.bin");
-   impirmir_lista_Alumnos(alumnos);
+   alumnos=cargar_alumnos("datos.bin",3);
+   impirmir_lista_Alumnos(alumnos,3);
 
    
 

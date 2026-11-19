@@ -1,6 +1,6 @@
 #include "funciones.h"
 
 int main(){
-  ejercicio_prop1();
+  ejemplo1_archivoBin();
   return 0;
 }
